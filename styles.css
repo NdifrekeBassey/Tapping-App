@@ -6,19 +6,20 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f3f3f3;
-    transition: background-color 0.5s ease; /* Smooth background color transition */
+    transition: background-color 0.5s ease;
 }
 
 .container {
     text-align: center;
+    max-width: 90%;
 }
 
 /* Main Heading Animation */
 #main-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #ff9900;
     margin-bottom: 20px;
-    animation: fadeInDown 2s ease; /* Applying the animation */
+    animation: fadeInDown 2s ease;
 }
 
 /* Animation for the heading */
@@ -34,14 +35,14 @@ body {
 }
 
 .clickable-image {
-    width: 150px;
+    width: 120px;
     cursor: pointer;
     margin: 20px 0;
-    transition: transform 0.2s ease; /* Add smooth scaling effect */
+    transition: transform 0.2s ease;
 }
 
 .clickable-image:active {
-    transform: scale(1.2); /* Scale effect when clicking the image */
+    transform: scale(1.2);
 }
 
 .coin-effect {
@@ -86,8 +87,30 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 5px;
 }
 
 button:active {
     background-color: #f39c12;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 10px;
+    }
+    
+    .clickable-image {
+        width: 80px;
+    }
+    
+    #main-heading {
+        font-size: 2rem;
+    }
+    
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
 }
